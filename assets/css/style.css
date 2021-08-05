@@ -1,0 +1,31 @@
+/* RESET */
+:root{
+    --space: 16px;
+    --cor-primaria: rgba(0,255,0,0.5)
+}
+
+*  {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+} 
+
+body,
+header,
+main,
+footer {
+    padding: var(--space);
+}
+
+h1,
+h2 {
+    background-color: var(--cor-primaria);
+    /* margin-top: 32px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+    margin: 64px 32px 16px 8px; */
+    margin: 24px 12px auto;
+    padding: 16px;
+    width: 640px;
+}
