@@ -4,6 +4,7 @@
     --cor-primaria: rgba(0,255,0,0.5);
     --cor-secundaria: rgba(0,0,255,.5);
     --cor-secundaria-light: rgba(0,0,255,.15);
+    --fonte-primaria: font-family: 'Raleway', sans-serif;
   }
   
   * {
@@ -20,8 +21,6 @@
   }
   
   h1 {
-    background-color: var(--cor-primaria);
-    font-family: 'Raleway', sans-serif;
     margin: var(--espacamento) auto;
     padding: var(--espacamento);
     text-align: center;
@@ -29,9 +28,6 @@
   }
   
   h2 {
-    background-color: var(--cor-secundaria);
-    color: white;
-    font-family: 'Raleway', sans-serif;
     margin: var(--espacamento) auto;
     padding: var(--espacamento);
     width: 100%;
@@ -41,30 +37,52 @@
     background-color: var(--cor-secundaria-light);
   }
 
-  header,
-  footer {
+  .cta {
+    background-color: var(--cor-primaria);
+    color: black;
+    font-family: var(--fonte-primaria);
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  .cta--intermediario {
+    margin: calc(var(--espacamento)*2) auto;
+  }
+  
+  .btn {
+    border: 1px solid black;
+    border-radius: 0 calc(var(--espacamento)/4);
+    display: block;
+    margin: var(--espacamento) auto;
+    padding: calc(var(--espacamento)/4) calc(var(--espacamento)/2);
+    text-decoration: none;
+    width: max-content;
+  }
+  
+  #logoTopo {
+    border: 3px solid black;
+    border-radius: 50%;
+  }
+  
+  #logoTopo img {
+    transition: transform .6s ease-out;
+  }
+  
+  #logoTopo:hover img {
+    transform: rotateZ(360deg);
+  }
+  
+  [href*="promo"] img {
+    width: 100%;
+  }
+  
+  .categoria {
     background-color: var(--cor-secundaria-light);
   }
-
-  .banner{
-    font-size: xx-large;
-      text-align: center;
+  
+  .categoria__produto {
+    border-radius: 4px;
   }
-
-  .img-banner{
-    border: 2px solid blue;
-    margin: auto;
-    display: block;
-  }
-
-  .btn {
-      background-color: var(--cor-primaria);
-      border: 1px solid black;
-      border-radius: calc(var(--espacamento)/4);
-      color: black;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bolder;
-      padding: calc(var(--espacamento)/4) calc(var(--espacamento)/2);
-      text-decoration: none;
-
-  }
+  
+  .categoria__produto--promocao {
+    border: 4px solid var(--cor-secundaria);
