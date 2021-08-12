@@ -32,7 +32,7 @@
     padding: var(--espacamento);
     width: 100%;
   }
-  
+
   section {
     background-color: var(--cor-secundaria-light);
   }
@@ -89,12 +89,25 @@
     width: 100%;
   }
   
+  .categoria h2.cta {
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%; */
+    flex: 1 0 100%;
+  }  
+
   .categoria {
     background-color: var(--cor-secundaria-light);
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    align-items: stretch;
   }
   
   .categoria__produto {
     border-radius: 4px;
+    flex: 1 1 21%;
+    border: 1px solid black;
   }
   
   .categoria__produto--promocao {
