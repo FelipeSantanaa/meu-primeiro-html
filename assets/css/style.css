@@ -106,6 +106,10 @@ footer p {
     flex: 0 1 50%;
   }
 
+  .banner-middle {
+    order: 0;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -114,8 +118,9 @@ footer p {
   }
 
   article.categoria__produto {
-    flex: 0 1 33%;
+    flex: 1 1 25%;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
